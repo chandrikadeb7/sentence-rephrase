@@ -20,8 +20,8 @@ export default function Paraphraser(props) {
     (async () => {
       setParaphraseLoading(true);
       const loadingToast = toast.loading('Paraphrasing...');
-
-      const rawResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/paraphrase`, {
+      const NEXT_PUBLIC_BASE_API_URL = "https://paraphraser.prod.hipcv.com";
+      const rawResponse = await fetch(`${NEXT_PUBLIC_BASE_API_URL}/paraphrase`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
