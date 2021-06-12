@@ -141,7 +141,7 @@ export default function Paraphraser(props) {
             </div>
             <div className="flex items-center justify-center relative">
               <div className="absolute left-0">
-                <span className={`font-medium ${[...inputText].length > 500 ? 'text-red-600' : 'text-green-600'}`}>{[...inputText].length}</span><span className="text-gray-500">/500 Characters</span>
+                <span className={`font-medium ${[...inputText].length > 500 ? 'text-red-600' : 'text-green-600'}`}>{[...inputText].length}</span><span className="text-gray-500">/500 </span>
                 <span className={` block font-medium ${[...inputText].length > 500 ? 'text-blue-500' : 'hidden'}`}><a href="mailto:amitgaur.web@gmail.com">Contact us to get more than 500 characters.</a></span>
               </div>
               <button type="button" className="disabled:opacity-60 max-w-md flex items-center justify-center px-7 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-3 md:text-lg md:px-10" onClick={handleParaphraseSubmission} disabled={[...inputText].length <= 10 || [...inputText].length > 500 || paraphraseLoading}>
