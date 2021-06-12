@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Paraphrasing Tool & Article Rewriter to paraphrase sentences.</title>
-        <meta name="description" content="Paraphrasing tool accurately rewrites the essays and articles using advanced AI. Use the completely free article rewriter tool, to help avoid plagiarism and increase creativity by rewording phrases. No signup required." />
+        <title>Plagiarism Remover</title>
+        <meta name="description" content="Plagiarism Remover accurately rewrites the essays and articles using advanced AI. Use the completely free article rewriter tool, to help avoid plagiarism and increase creativity by rewording phrases. No signup required." />
         <link rel="icon" href="/paraphrasing-tool/favicon.png" />
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}></script>
         <script

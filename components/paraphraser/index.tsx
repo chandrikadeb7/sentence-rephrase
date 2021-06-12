@@ -135,7 +135,7 @@ export default function Paraphraser(props) {
                   <span className="block pb-2 text-center text-gray-600">
                     Plagiarism Free Text
                 </span>
-                  <textarea name="outputText" className="border-2 border-gray-200 h-96 disabled:opacity-60 block w-full sm:text-sm rounded-lg p-4 md:text-lg focus:outline-none focus:ring focus:border-blue-600 resize-none" placeholder="You will get the resulting text here after the paraphrasing tool has finished rephrasing." value={outputText} disabled={paraphraseLoading} readOnly></textarea>
+                  <textarea name="outputText" className="border-2 border-gray-200 h-96 disabled:opacity-60 block w-full sm:text-sm rounded-lg p-4 md:text-lg focus:outline-none focus:ring focus:border-blue-600 resize-none" placeholder="You will get the resulting text here after the plagiarism remover tool has finished rephrasing." value={outputText} disabled={paraphraseLoading} readOnly></textarea>
                 </label>
               </div>
             </div>
