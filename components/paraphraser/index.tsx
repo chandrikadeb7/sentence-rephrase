@@ -20,8 +20,8 @@ export default function Paraphraser(props) {
     (async () => {
       setParaphraseLoading(true);
       const loadingToast = toast.loading('Paraphrasing...');
-      const NEXT_PUBLIC_BASE_API_URL = "https://paraphraser.prod.hipcv.com";
-      const rawResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/paraphrase`, {
+      const NEXT_PUBLIC_BASE_API_URL="https://paraphraser.prod.hipcv.com";
+      const rawResponse = await fetch(`${NEXT_PUBLIC_BASE_API_URL}/paraphrase`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -88,32 +88,6 @@ export default function Paraphraser(props) {
             <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between flex-wrap">
                 <div className="w-0 flex-1 flex items-center">
-                  <span className="flex p-2 rounded-lg bg-blue-800">
-                    <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-                    </svg>
-                  </span>
-                  <p className="ml-3 font-medium text-white truncate">
-                    <a href="https://hipcv.com?utm_source=paraphrasing-tool" className="block p-2">
-                      <span className="md:hidden">
-                        Use our app hipCV to create free professional resumes in minutes.
-                    </span>
-                      <span className="hidden md:inline">
-                        Looking for a job or need a professional resume? Use our app hipCV to create free resumes and cover letters!
-                    </span>
-                    </a>
-                  </p>
-                </div>
-                <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-                  <span className="relative inline-flex rounded-md shadow-sm">
-                    <a href="https://hipcv.com?utm_source=paraphrasing-tool" className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-blue-50">
-                      Create free resume
-                  </a>
-                    <span className="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
-                    </span>
-                  </span>
                 </div>
               </div>
             </div>
@@ -223,9 +197,6 @@ export default function Paraphraser(props) {
                       <div className="font-bold text-gray-900">
                         Free to use
                     </div>
-                      <div className="mt-2 text-gray-500">
-                        Our article rewriter is entirely free of cost to use. We don't need your credit card or any payment information to help you generate the rephrased article or essay.
-                    </div>
                     </div>
                   </div>
                   <div className="flex bg-gray-50 p-6 rounded-lg prose lg:prose-lg">
@@ -237,9 +208,6 @@ export default function Paraphraser(props) {
                     <div className="ml-4">
                       <div className="font-bold text-gray-900">
                         No signup required
-                    </div>
-                      <div className="mt-2 text-gray-500">
-                        Our software does not require any signup, login, or registration. Just provide the text you need to be rewritten and click the <code>Paraphrase</code> button. Nothing else needed.
                     </div>
                     </div>
                   </div>
@@ -253,19 +221,8 @@ export default function Paraphraser(props) {
                     </div>
                     <div className="ml-4">
                       <div className="font-bold text-gray-900">
-                        How do you use a paraphrasing tool?
+                        Globally accessible
                     </div>
-                      <div className="mt-2 text-gray-500">
-                        <p className="pb-2">
-                          Our article rewriter is one of the easiest software on the internet for rephrasing phrases or articles. To use our tool, you need to either write or paste your input article into the first box.
-                      </p>
-                        <p className="pb-2">
-                          After that, click the <code>Paraphrase</code> button. Once you submit the information, our AI will start analyzing and rewriting the article while keeping the original intent identical.
-                      </p>
-                        <p>
-                          When the AI has finished processing, you'll be able to see the results in the second box. Also, you can copy results by clicking on the <code>Copy Result</code> button.
-                      </p>
-                      </div>
                     </div>
                   </div>
                   <div className="flex bg-gray-50 p-6 rounded-lg prose lg:prose-lg">
@@ -276,14 +233,8 @@ export default function Paraphraser(props) {
                     </div>
                     <div className="ml-4">
                       <div className="font-bold text-gray-900">
-                        Which is the best paraphrasing tool?
+                        Certified Solution Approach
                     </div>
-                      <div className="mt-2 text-gray-500">
-                        <p className="pb-2">Our tool is amongst the best online software out there for paraphrasing and article & essay rewriting.</p>
-                        <p className="pb-2">You can find lots of different paraphrasing tools online. Almost all of them are either very poor in the level of quality and accuracy of the sentences they generate. Either ask for money or need signup before continuing. They are ad-ridden most of the time and do not have a good usability experience while using.</p>
-                        <p className="pb-2">Most of these online tools rely on simple text synonym replacement, hence their low quality. They don't understand the meaning behind the sentences entirely.</p>
-                        <p className="pb-2">On the other hand, our software uses advanced artificial intelligence models that excel at paraphrasing. Our AI models have spent countless hours analyzing English phrases. These models understand the semantics behind the sentences, due to which they can perform a much better job of rewriting.</p>
-                      </div>
                     </div>
                   </div>
                   <div className="flex bg-gray-50 p-6 rounded-lg prose lg:prose-lg">
@@ -294,16 +245,8 @@ export default function Paraphraser(props) {
                     </div>
                     <div className="ml-4">
                       <div className="font-bold text-gray-900">
-                        How do you paraphrase quickly?
+                        Paraphrases your text quickly
                     </div>
-                      <div className="mt-2 text-gray-500">
-                        <p className="pb-2">
-                          The easiest way to paraphrase is by using our software.
-                      </p>
-                        <p>
-                          But, if you want to do it yourself, one neat trick is to internalize the meaning of the sentence you are trying to paraphrase. Then, try to convey the same thought in your own words.
-                      </p>
-                      </div>
                     </div>
                   </div>
                   <div className="flex bg-gray-50 p-6 rounded-lg prose lg:prose-lg">
@@ -314,13 +257,8 @@ export default function Paraphraser(props) {
                     </div>
                     <div className="ml-4">
                       <div className="font-bold text-gray-900">
-                        What is an article spinner?
+                        Generates varied results
                     </div>
-                      <div className="mt-2 text-gray-500">
-                        <p className="pb-2">
-                          Article spinners are low-quality article rewriting software tools that generate new sentences from existing by replacing the words with their synonyms. The output text generated usually isn't that great and looks very spammy.
-                      </p>
-                      </div>
                     </div>
                   </div>
                   <div className="flex bg-gray-50 p-6 rounded-lg prose lg:prose-lg">
@@ -331,19 +269,8 @@ export default function Paraphraser(props) {
                     </div>
                     <div className="ml-4">
                       <div className="font-bold text-gray-900">
-                        Is the paraphrasing tool plagiarizing?
+                        Secure API Usage
                     </div>
-                      <div className="mt-2 text-gray-500">
-                        <p className="pb-2">
-                          One of the most common causes of plagiarism is paraphrasing and not giving any citations.
-                      </p>
-                        <p className="pb-2">
-                          So, when you rephrase the article and keep the key points as is. One way to avoid plagiarism would be to cite the sources appropriately.
-                      </p>
-                        <p>
-                          By following the best practices set by your organization, you should be able to avoid plagiarism.
-                      </p>
-                      </div>
                     </div>
                   </div>
                   <div className="flex bg-gray-50 p-6 rounded-lg prose lg:prose-lg">
@@ -354,16 +281,8 @@ export default function Paraphraser(props) {
                     </div>
                     <div className="ml-4">
                       <div className="font-bold text-gray-900">
-                        How can you paraphrase without plagiarizing?
+                        Report Us a bug
                     </div>
-                      <div className="mt-2 text-gray-500">
-                        <p className="pb-2">
-                          If you copy the information from a source, a good rule of thumb is to cite that source. By doing that, you are not trying to take credit for someone else's original work.
-                      </p>
-                        <p>
-                          If the person or organization receiving the article or essay has provided the criteria regarding paraphrasing. It will be a good idea to follow that.
-                      </p>
-                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,24 +1,48 @@
 const Footer = () => (
-  <footer className="w-full p-16 bg-gray-100 text-gray-600">
-    <nav className="container mx-auto flex items-center justify-between flex-wrap">
-      <div className="m-auto flex flex-wrap items-center justify-center text-2xl">
-        <a className="flex flex-col items-center mx-4" target="_blank" rel="noopener nofollow" title="Twitter" href="https://twitter.com/websymphony"><svg className="fill-current w-10 h-10 mr-2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-          <path d="M32 6.078c-1.2.522-2.458.868-3.78 1.036 1.36-.812 2.398-2.088 2.886-3.626a13.11 13.11.0 01-4.16 1.588C25.742 3.794 24.026 3 22.154 3a6.56 6.56.0 00-6.556 6.562c0 .52.044 1.02.152 1.496-5.454-.266-10.28-2.88-13.522-6.862-.566.982-.898 2.106-.898 3.316a6.57 6.57.0 002.914 5.452 6.48 6.48.0 01-2.964-.808v.072c0 3.188 2.274 5.836 5.256 6.446-.534.146-1.116.216-1.72.216-.42.0-.844-.024-1.242-.112.85 2.598 3.262 4.508 6.13 4.57a13.18 13.18.0 01-8.134 2.798c-.538.0-1.054-.024-1.57-.1C2.906 27.93 6.35 29 10.064 29c12.072.0 18.672-10 18.672-18.668.0-.3-.01-.57-.024-.848C30.014 8.56 31.108 7.406 32 6.078z">
-          </path>
-        </svg>
-          Follow on twitter
-        </a>
-        <a className="flex flex-col items-center mx-4" target="_blank" rel="noopener nofollow" title="Websymphony site" href="https://websymphony.net?utm_source=paraphrasing-tool">
-          <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          https://websymphony.net
-        </a>
-        <a className="flex flex-col items-center mx-4" target="_blank" rel="noopener nofollow" title="hipCV" href="https://hipcv.com?utm_source=paraphrasing-tool">
-          <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-          Create free resumes
-        </a>
-      </div>
-    </nav>
-  </footer>
+  <footer className="bg-blue-700 text-white pt-12 pb-8 px-4">
+    <div className="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between">
+        <a href="/" className="block mr-4 w-1/3"></a>
+        <div className="w-full block sm:flex text-sm mt-4 lg:mt-0">
+            <ul className="text-white-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                <li className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Product</li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">Features</a></li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">Integrations</a></li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">Pricing</a></li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">FAQ</a></li>
+            </ul>
+            <ul className="text-white-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                <li className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">About Us</li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">Privacy Policy</a>
+                </li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">Terms and Conditions</a></li>
+            </ul>
+            <ul className="text-white-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                <li className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Disclaimer</li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">Disclaimer Document</a></li>
+                <li><a href="#" className="inline-block py-2 px-3 text-white-500 hover:text-white no-underline">Guides</a></li>
+            </ul>
+            <div className="text-white-700 flex flex-col w-full">
+                <div className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Contact Us</div>
+                <div className="flex pl-4 justify-start mt-2">
+                    <a className="block flex items-center text-white-300 hover:text-white mr-6 no-underline" href="#">
+                        <svg viewBox="0 0 24 24" className="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" /></svg>
+                    </a>
+                    <a className="block flex items-center text-white-300 hover:text-white mr-6 no-underline" href="#">
+                        <svg viewBox="0 0 24 24" className="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" /></svg>
+                    </a>
+                    <a className="block flex items-center text-white-300 hover:text-white no-underline" href="#">
+                        <svg viewBox="0 0 24 24" className="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="pt-4 mt-4 pt-6 text-white-600 border-t border-white-800 text-center"> © 2021 Plagiarism Remover. All rights reserved.
+    </div>
+</footer>
 );
 
 export default Footer;
