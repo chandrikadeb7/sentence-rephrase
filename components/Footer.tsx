@@ -1,7 +1,6 @@
 const Footer = () => (
   <footer className="bg-blue-700 text-white pt-12 pb-8 px-4">
-    <div className="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between">
-        <a href="/" className="block mr-4 w-1/3"></a>
+    <div className="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between max-w-6xl">
         <div className="w-full block sm:flex text-sm mt-4 lg:mt-0">
             <ul className="text-white-700 list-none p-0 font-thin flex flex-col text-left w-full">
                 <li className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Product</li>
